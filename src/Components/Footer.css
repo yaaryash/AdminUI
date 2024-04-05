@@ -1,0 +1,50 @@
+.footer-wrapper {
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.footer button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 5px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer button:before {
+
+    background-color: #51a6ff;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.footer button:after {
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0.4;
+    z-index: 2;
+}
+
+.footer button.active {
+    background-color: #fff;
+    color: #000;
+}
+
+.footer button:hover:before {
+    opacity: 1;
+}
+
+.footer button:hover:after {
+    opacity: 0.6;
+}

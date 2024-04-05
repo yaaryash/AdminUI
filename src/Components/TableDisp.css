@@ -1,0 +1,158 @@
+.body {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.table {
+    display: block;
+    overflow: hidden;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100em;
+    max-width: 75%;
+    margin: 20px auto;
+    overflow-x: auto;
+    font-size: 14px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.action-button {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.table th,
+.table td {
+    padding: 0.4rem;
+}
+
+.expand-check-box {
+    width: 10%;
+}
+
+.expand-name {
+    width: 25%;
+}
+
+.expand-email {
+    width: 50%
+}
+
+.expand-role {
+    width: 20%;
+}
+
+.expand-action {
+    width: 20%;
+}
+
+.table td {
+    border-top: 0.5px solid #51a6ff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table td input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #51a6ff;
+    border-radius: 4px;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.table td input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    background-color: #51a6ff;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.table td input[type="checkbox"]:checked::before {
+    opacity: 1;
+}
+
+.table thead th input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #51a6ff;
+    border-radius: 4px;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.table thead th input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    background-color: #51a6ff;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.table thead th input[type="checkbox"]:checked::before {
+    opacity: 1;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Add any other hover styles */
+}
+
+.selected {
+    background-color: rgba(255, 255, 255, 0.2)
+}
+
+.button-links {
+    width: 18px;
+    height: 20px;
+
+}
+
+#edit {
+    transform: scale(0.7);
+    width: 25px;
+    height: 25px;
+    fill: green;
+
+}
+
+#trash {
+    transform: scale(0.8);
+    width: 25px;
+    height: 25px;
+    fill: red
+}
+
+.table-heads-wrapper {
+    border-bottom: 1px solid;
+}
+
+.action-btn:hover {
+    cursor: crosshair;
+}
